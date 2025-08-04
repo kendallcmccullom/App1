@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Relative layout as parent layout -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <!-- text view to show the selected item-->
+
+    <TextView
+        android:id="@+id/testView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="231dp"
+        android:background="@android:drawable/editbox_background"
+        android:drawableEnd="@drawable/downarrow"
+        android:hint="Select course"
+        android:padding="12dp"/>
+"/>
+
+    <EditText
+        android:id="@+id/coursenum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/testView"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="369dp"
+        android:hint="Enter Number"
+        android:inputType="text"
+        android:singleLine="true"
+        />
+
+    <EditText
+        android:id="@+id/teacher"
+        android:layout_width="396dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="327dp"
+        android:hint="Enter Teacher's Last Name"
+
+
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/buttonenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="158dp"
+        android:layout_marginBottom="280dp"
+        android:text="Enter"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteY="290dp" />
+
+    <Button
+        android:id="@+id/buttongbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go Back" />
+
+
+</RelativeLayout>
